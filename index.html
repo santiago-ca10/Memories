@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Felicidades, Graduada 🎓</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="sparkles"></div>
+
+<svg class="flower tl" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#ffc2dc" opacity="0.9"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#ffc2dc" opacity="0.9" transform="rotate(72 50 50)"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#f7a8c4" opacity="0.9" transform="rotate(144 50 50)"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#ffc2dc" opacity="0.9" transform="rotate(216 50 50)"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#f7a8c4" opacity="0.9" transform="rotate(288 50 50)"/>
+    <circle cx="50" cy="50" r="10" fill="#f4c95d"/>
+  </g>
+</svg>
+
+<svg class="flower br" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#d6c3f2" opacity="0.9"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#d6c3f2" opacity="0.9" transform="rotate(72 50 50)"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#c9a6ee" opacity="0.9" transform="rotate(144 50 50)"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#d6c3f2" opacity="0.9" transform="rotate(216 50 50)"/>
+    <ellipse cx="50" cy="30" rx="16" ry="24" fill="#c9a6ee" opacity="0.9" transform="rotate(288 50 50)"/>
+    <circle cx="50" cy="50" r="10" fill="#f4c95d"/>
+  </g>
+</svg>
+
+<button id="musicToggle" title="Música suave" aria-label="Activar música">🔇</button>
+
+<div id="app">
+
+  <!-- Pantalla de bienvenida -->
+  <section class="screen active" id="welcomeScreen">
+    <div class="cap">🎓</div>
+    <h1 class="title">Felicidades por tu<br>graduación</h1>
+    <p class="subtitle">Hay unas pequeñas cartas para ti.<br>Desliza hacia la izquierda ❤️</p>
+    <button class="primary" id="startBtn">Comenzar</button>
+  </section>
+
+  <!-- Tarjetas -->
+  <section class="screen" id="cardScreen">
+    <div class="progress" id="progress"></div>
+    <div class="stack" id="stack"></div>
+    <div class="swipe-hint">Desliza o arrastra la tarjeta →</div>
+  </section>
+
+  <!-- Pantalla final -->
+  <section class="screen" id="finalScreen">
+    <div class="cap">🎓✨</div>
+    <h1>¡Felicidades graduada!</h1>
+    <p class="msg">Este es solo el comienzo<br>de una nueva etapa.<br><br>Nunca dejes de soñar.</p>
+    <div class="signoff">Con cariño ❤️ — Santiago</div>
+    <button class="primary" id="revealBtn">🌟 Gracias por leer</button>
+    <div id="revealBox">
+      <p>Estoy muy orgulloso de ti. Nunca olvides lo lejos que has llegado y todo lo que aún puedes lograr. Felicitaciones por este gran paso. ❤️🎓</p>
+    </div>
+    <button class="restart" id="restartBtn">↺ Volver al inicio</button>
+  </section>
+
+</div>
+
+<canvas id="confettiCanvas"></canvas>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
