@@ -38,7 +38,7 @@
     {
       icon: '🦋',
       text: 'No olvides que este logro\nno define tu límite,\nsolo demuestra de lo que eres capaz.',
-      signature: '✨ Estoy orgulloso(a) de ti.'
+      signature: '✨ Estoy orgulloso de ti.'
     },
     {
       icon: '🌸',
